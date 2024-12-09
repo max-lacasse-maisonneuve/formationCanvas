@@ -4,149 +4,189 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Formation Canvas</title>
+        <script src="assets/js/script.js" defer></script>
+        <link rel="stylesheet" href="assets/css/styles.css" />
     </head>
     <body>
-        <h1>Formation sur le canvas</h1>
-        <section>
-            <h2>Bases de la programmation de JavaScript</h2>
-            <ul>
-                <li>Installer un script JavaScript</li>
-                <li>Variables et types de données</li>
-                <li>Opérations mathématiques</li>
-                <li>Sélectionner un élément HTML sur la page</li>
-                <li>Détecter un clic sur un élément HTML</li>
-                <li>Fonctions</li>
-                <li>Structure d'un fichier JavaScript</li>
-                <li>Les conditions</li>
-                <li>Sélectionner plusieurs éléments HTML sur la page</li>
-                <li>Les tableaux</li>
-                <li>Les boucles</li>
-                <li>Objets</li>
-                <li>Objet Math</li>
-                <li>Attendre le chargement des médias</li>
-                <li>Gestion des sons et de la musique</li>
-                <li>Afficher/Cacher un élément HTML par programmation</li>
-                <li>Déboguer quand plus rien ne va</li>
-            </ul>
-        </section>
+        <header>
+            <h1>Formation sur le canvas</h1>
+            <input type="checkbox" id="menu-btn" />
+            <label for="menu-btn" class="menu-icon">&#9776;</label>
+            <label for="menu-btn" class="close-icon">&#10006;</label>
+            <nav>
+                <ul>
+                    <li><a href="#bases">Bases de la programmation de JavaScript</a></li>
+                    <li><a href="#canvas">Les bases de la balise Canvas</a></li>
+                    <li><a href="#jeu-simple">Jeu simple avec Canvas</a></li>
+                    <li><a href="#js-intermediaire">Programmation JavaScript intermédiaire</a></li>
+                    <li><a href="#jeu-simple-canvas">Jeu simple avec Canvas</a></li>
+                    <li><a href="#jeu-intermediaire-canvas">Jeu intermédiaire avec Canvas</a></li>
+                    <li><a href="#js-avance">Programmation JavaScript avancée</a></li>
+                    <li><a href="#jeu-intermediaire-gravite">Jeu intermédiaire simulant la gravité avec Canvas</a></li>
+                    <li><a href="#jeu-avance-carte">Jeu avancé utilisant une carte</a></li>
+                    <li><a href="#jeux-complets">Exemples de jeux complets</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="bases">
+                <h2>Bases de la programmation de JavaScript</h2>
+                <ol>
+                    <li>Installer un script JavaScript</li>
+                    <li>Variables et types de données</li>
+                    <li>Opérations mathématiques</li>
+                    <li>Sélectionner un élément HTML sur la page</li>
+                    <li>Détecter un clic sur un élément HTML</li>
+                    <li>Fonctions</li>
+                    <li>Structure d'un fichier JavaScript</li>
+                    <li>Les conditions</li>
+                    <li>Sélectionner plusieurs éléments HTML sur la page</li>
+                    <li>Les tableaux</li>
+                    <li>Les boucles</li>
+                    <li>Objets</li>
+                    <li>Objet Math</li>
+                    <li>Attendre le chargement des médias</li>
+                    <li>Gestion des sons et de la musique</li>
+                    <li>Afficher/Cacher un élément HTML par programmation</li>
+                    <li>Déboguer quand plus rien ne va</li>
+                </ol>
+            </section>
 
-        <section>
-            <h2>Les bases de la balise Canvas</h2>
-            <h3>Objectifs: Introduction à la balise canvas</h3>
-            <ul>
-                <li>Créer et initialiser un jeu avec Canvas</li>
-                <li>Ajuster la taille de la balise <canvas></canvas></li>
-                <li>Ajouter du texte</li>
-                <li>Dessiner une forme</li>
-                <li>Changer la taille et la couleur</li>
-                <li>Effacer le canvas</li>
-                <li>Créer une application de dessin</li>
-            </ul>
-        </section>
+            <section id="canvas">
+                <h2>Les bases de la balise Canvas</h2>
+                <h3>Objectifs: *ntroduction à la balise canvas</h3>
+                <ol>
+                    <li>Créer et initialiser un jeu avec Canvas</li>
+                    <li>Ajuster la taille de la balise Canvas</li>
+                    <li>Ajouter du texte</li>
+                    <li>Dessiner une forme</li>
+                    <li>Changer la taille et la couleur</li>
+                    <li>Effacer le canvas</li>
+                    <li>Créer une application de dessin</li>
+                </ol>
+            </section>
 
-        <section>
-            <h2>Jeu simple avec Canvas</h2>
-            <h3>
-                Objectifs: Utilisation de variables, fonctions, structures conditionnelles, opérateurs mathématiques,
-                modulo
-            </h3>
-            <ul>
-                <li>Créer une boucle de jeu</li>
-                <li>Dessiner et animer un arrière-plan animé</li>
-                <li>Position et limites du canvas</li>
-                <li>Dessiner et animer un objet</li>
-                <li>Créer une minuterie et gestion du temps</li>
-                <li>Détecter le clic sur un élément</li>
-                <li>Arrêter la boucle de jeu</li>
-                <li>Créer un jeu de rapidité</li>
-            </ul>
-        </section>
+            <section id="jeu-simple">
+                <h2>Jeu simple avec Canvas</h2>
+                <h3>
+                    Objectifs: Utilisation de variables, fonctions, structures conditionnelles, opérateurs
+                    mathématiques, modulo
+                </h3>
+                <ol>
+                    <li>Créer une boucle de jeu</li>
+                    <li>Dessiner et animer un arrière-plan animé</li>
+                    <li>Position et limites du canvas</li>
+                    <li>Dessiner et animer un objet</li>
+                    <li>Créer une minuterie et gestion du temps</li>
+                    <li>Détecter le clic sur un élément</li>
+                    <li>Arrêter la boucle de jeu</li>
+                    <li>Créer un jeu de rapidité</li>
+                </ol>
+            </section>
 
-        <section>
-            <h2>Programmation de JavaScript intermédiaire</h2>
-            <ul>
-                <li>Concevoir un programme JavaScript</li>
-                <li>Traitement des chaines</li>
-                <li>Traitement des nombres</li>
-                <li>Conditions multiples et la table de vérité</li>
-                <li>Filtrer/trier un tableau</li>
-                <li>Gestion des événements, retirer un écouteur d'événement</li>
-                <li>Le Document Object Model</li>
-                <li>Documenter son code</li>
-            </ul>
-        </section>
+            <section id="js-intermediaire">
+                <h2>Programmation JavaScript intermédiaire</h2>
+                <ol>
+                    <li>Concevoir un programme JavaScript</li>
+                    <li>Traitement des chaines</li>
+                    <li>Traitement des nombres</li>
+                    <li>Conditions multiples et la table de vérité</li>
+                    <li>Filtrer/trier un tableau</li>
+                    <li>Gestion des événements, retirer un écouteur d'événement</li>
+                    <li>Le Document Object Model</li>
+                    <li>Documenter son code</li>
+                </ol>
+            </section>
 
-        <section>
-            <h2>Jeu simple avec Canvas</h2>
-            <h3>Objectifs: Traitement de chaines, déclencher des fonctions avec délais, Math</h3>
-            <ul>
-                <li>Générer un nombre aléatoire</li>
-                <li>Contraindre une valeur entre deux limites</li>
-                <li>Traiter des nombres</li>
-                <li>Changement d'états d'un jeu</li>
-                <li>Déclencher une action avec délai</li>
-                <li>Créer un jeu tour par tour de type RPG</li>
-            </ul>
-        </section>
+            <section id="jeu-simple-canvas">
+                <h2>Jeu simple avec Canvas</h2>
+                <h3>Objectifs: Traitement de chaines, déclencher des fonctions avec délais, Math</h3>
+                <ol>
+                    <li>Générer un nombre aléatoire</li>
+                    <li>Contraindre une valeur entre deux limites</li>
+                    <li>Traiter des nombres</li>
+                    <li>Changement d'états d'un jeu</li>
+                    <li>Déclencher une action avec délai</li>
+                    <li>Créer un jeu tour par tour de type RPG</li>
+                </ol>
+            </section>
 
-        <section>
-            <h2>Jeu intermédiaire avec Canvas</h2>
-            <h3>Objectifs: Utilisation de tableau, boucles, objets</h3>
-            <ul>
-                <li>Regrouper plusieurs informations grâce aux objets</li>
-                <li>Déplacer un élément avec les touches du clavier</li>
-                <li>Détecter les collisions avec des objets fixes</li>
-                <li>Lancer un projectile dans une direction précise</li>
-                <li>Dessiner et animer une liste d'objets</li>
-                <li>Détruire un élément d'une liste d'objets</li>
-                <li>Affichage du score</li>
-                <li>Affichage de panneaux de fin</li>
-                <li>Créer un jeu d'action</li>
-            </ul>
-        </section>
+            <section id="jeu-intermediaire-canvas">
+                <h2>Jeu intermédiaire avec Canvas</h2>
+                <h3>Objectifs: Utilisation de tableau, boucles, objets</h3>
+                <ol>
+                    <li>Regrouper plusieurs informations grâce aux objets</li>
+                    <li>Tourner un élément avec les touches du clavier</li>
+                    <li>Calculer la distance et la direction entre deux points</li>
+                    <li>Lancer un projectile dans une direction précise</li>
+                    <li>Détecter les collisions</li>
+                    <li>Dessiner et animer une liste d'objets</li>
+                    <li>Détruire un élément d'une liste d'objets</li>
+                    <li>Affichage du score</li>
+                    <li>Affichage de panneaux de fin</li>
+                    <li>Créer un jeu d'action vu à vol d'oiseau type Tower defense</li>
+                </ol>
+            </section>
 
-        <section>
-            <h2>Jeu intermédiaire simulant la gravité avec Canvas</h2>
-            <h3>
-                Objectifs: Utilisation de séquence d'animation (spritesheet), utilisation de fichiers séparés,
-                introduction aux classes
-            </h3>
-            <ul>
-                <li>Animer un personnage en utilisant une séquence d'animation</li>
-                <li>Déplacer un personnage en simulant la gravité</li>
-                <li>Éviter le saut double</li>
-                <li>Changement d'état</li>
-                <li>Transformations d'un élément</li>
-                <li>Créer un jeu de type infinite runner avec un boss</li>
-            </ul>
-        </section>
+            <section id="js-avance">
+                <h2>Programmation JavaScript avancée</h2>
+                <ol>
+                    <li>Programmation orientée-objet</li>
+                    <li>Classes</li>
+                    <li>Instanciation</li>
+                    <li>This et contexte</li>
+                    <li>Traverse du Dom vers la racine</li>
+                    <li>Clôner un élément HTML</li>
+                </ol>
+            </section>
 
-        <section>
-            <h2>Jeu avancé utilisant une carte</h2>
-            <h3>Fonctions asynchrones, fonctions avancées des tableaux, suite des classes</h3>
-            <ul>
-                <li>Créer un niveau avec Tiled</li>
-                <li>Créer un jeu de plateforme</li>
-                <li>Importer un fichier JSON dans un jeu avec Canvas</li>
-                <li>Détecter les collisions</li>
-                <li>Créer un jeu de plateformes</li>
-            </ul>
-        </section>
+            <section id="jeu-intermediaire-gravite">
+                <h2>Jeu intermédiaire simulant la gravité avec Canvas</h2>
+                <h3>
+                    Objectifs: Utilisation de séquence d'animation (spritesheet), utilisation de fichiers séparés,
+                    introduction aux classes
+                </h3>
+                <ol>
+                    <li>Animer un personnage en utilisant une séquence d'animation</li>
+                    <li>Déplacer un personnage en simulant la gravité</li>
+                    <li>Éviter le saut double</li>
+                    <li>Changement d'état</li>
+                    <li>Transformations d'un élément</li>
+                    <li>Créer un jeu de type infinite runner avec un boss</li>
+                </ol>
+            </section>
 
-        <section>
-            <h2>Exemples de jeux complets</h2>
-            <ul>
-                <li>MasterMind (Tableau)</li>
-                <li>Roche Papier ciseau (Structure conditionnelles)</li>
-                <li>Jeu de Simon</li>
-                <li>Bonhomme pendu (tableau/texte)</li>
-                <li>Jeu de course(Détection de collisions, UI, Son)</li>
-                <li>Tic tac toe(arbre décision)</li>
-                <li>Jeu de combat 1vs1</li>
-                <li>Jeu d'aventure</li>
-                <li>Jeu de texte (événements et séquences d'objets)</li>
-                <li>Jeu de cartes(tour par tour)</li>
-            </ul>
-        </section>
+            <section id="jeu-avance-avec-carte">
+                <h2>Jeu avancé utilisant une carte</h2>
+                <h3>Fonctions asynchrones, fonctions avancées des tableaux, suite des classes</h3>
+                <ol>
+                    <li>Créer un niveau avec Tiled</li>
+                    <li>Créer un jeu de plateforme</li>
+                    <li>Importer un fichier JSON dans un jeu avec Canvas</li>
+                    <li>Détecter les collisions</li>
+                    <li>Créer un jeu de plateformes</li>
+                </ol>
+            </section>
+
+            <section id="jeux-complets">
+                <h2>Exemples de jeux complets</h2>
+                <ol>
+                    <li>* - Roche Papier ciseau (Structure conditionnelles)</li>
+                    <li>* - Mini-Quiz (états de jeux)</li>
+                    <li>** - MasterMind (Tableau)</li>
+                    <li>** - Bonhomme pendu (tableau/texte)</li>
+                    <li>** - Wordl</li>
+                    <li>*** - Jeu de Simon (Tableau, fonction avec délai, séquence de sons)</li>
+                    <li>*** - Jeu de course(Détection de collisions, UI, Son)</li>
+                    <li>*** - Jeu d'aventure</li>
+                    <li>*** - BlackJack</li>
+                    <li>**** - Tic tac toe(arbre décision)</li>
+                    <li>**** - Jeu de dames</li>
+                    <li>**** - Jeu de combat 1vs1</li>
+                    <li>**** - Jeu de texte (événements et graph)</li>
+                    <li>***** - Démineur (A* pathfinding)</li>
+                </ol>
+            </section>
+        </main>
     </body>
 </html>

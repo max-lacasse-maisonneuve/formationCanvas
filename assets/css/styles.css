@@ -1,0 +1,131 @@
+@import url("./reset.css");
+body,
+html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    padding-top: 5rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header input[type="checkbox"] {
+    display: none;
+}
+
+header input[type="checkbox"]:checked ~ nav {
+    display: block;
+}
+
+.menu-icon,
+.close-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+header input[type="checkbox"]:checked ~ .menu-icon {
+    display: none;
+}
+
+header input[type="checkbox"]:checked ~ .close-icon {
+    display: block;
+}
+
+header input[type="checkbox"]:not(:checked) ~ .menu-icon {
+    display: block;
+}
+header input[type="checkbox"]:not(:checked) ~ .close-icon {
+    display: none;
+}
+
+nav {
+    display: none;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 1rem;
+    border-bottom: 1px solid white;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav.show {
+    display: block;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    margin: 0;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+section h3 {
+    margin: 0;
+    padding: 1rem;
+    background-color: #444;
+    color: white;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 2rem;
+}
+
+ol li {
+    margin-bottom: 1rem;
+    counter-increment: item;
+    list-style-type: none;
+}
+
+ol li::before {
+    content: counter(item) ". ";
+    /* counter-increment: item; */
+    counter-reset: none;
+}
